@@ -51,7 +51,7 @@ class Redactor:
 			# applying the redaction
 			page.apply_redactions()
 			
-		doc.save(path,incremental=True, encryption=fitz.PDF_ENCRYPT_KEEP)
+		#doc.save(path,incremental=True, encryption=fitz.PDF_ENCRYPT_KEEP)
 		print("Successfully redacted email id")
 
 if __name__ == "__main__":
