@@ -11,8 +11,8 @@ from spacy.matcher import Matcher
 import nlp
 #pip install PyMuPDF==1.14.20
 
-path = 'https://github.com/BAKRKV/ig-hackathon/blob/62b8c0bf484a2555953b61c7ddff7cf26b7a990e/ABC.pdf'
-output_location='https://github.com/BAKRKV/ig-hackathon/blob/62b8c0bf484a2555953b61c7ddff7cf26b7a990e/ABC.pdf'
+path = raw_input()
+output_location=raw_input()
 
 class Redactor:
 	@staticmethod
