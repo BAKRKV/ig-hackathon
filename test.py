@@ -11,8 +11,6 @@ from spacy.matcher import Matcher
 import nlp
 #pip install PyMuPDF==1.14.20
 
-path = raw_input()
-output_location=raw_input()
 
 class Redactor:
 	@staticmethod
@@ -53,11 +51,12 @@ class Redactor:
 			# applying the redaction
 			page.apply_redactions()
 			
-		doc.save(output_location,incremental=True, encryption=fitz.PDF_ENCRYPT_KEEP)
+		doc.save(path,incremental=True, encryption=fitz.PDF_ENCRYPT_KEEP)
 		print("Successfully redacted email id")
 
 if __name__ == "__main__":
 
 	# replace it with name of the pdf file
+	path = raw_input()
 	redactor = Redactor(path)
 	redactor.redaction()
