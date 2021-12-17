@@ -11,8 +11,8 @@ from spacy.matcher import Matcher
 import nlp
 #pip install PyMuPDF==1.14.20
 
-path = 'C:/Users/kumarba/Desktop/CV Clean/test/ABC.pdf'
-output_location='C:/Users/kumarba/Desktop/CV Clean/test/ABC.pdf'
+path = 'ABC.pdf'
+output_location='ABC.pdf'
 
 class Redactor:
 	@staticmethod
